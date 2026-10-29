@@ -203,3 +203,9 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .hw-2{margin:18px 0 0}.hw-2 a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px;color:var(--m2);font:400 18px var(--bask);text-underline-offset:4px}
 .intro-p{font:400 19px/1.5 var(--bask);margin:0 0 22px;color:var(--m)}
 .list li{margin:0 0 20px}.list b{display:block;letter-spacing:.06em}
+/* v16: header-logga radbruten som og-image, burger höger */
+.wm{grid-column:2;grid-row:1;flex-direction:column;white-space:nowrap;line-height:.92;font-size:19px;letter-spacing:.03em;text-align:center;min-height:44px;justify-content:center;padding:2px 6px}
+.wm .w1{display:block}.wm .w2{display:block;font-size:1.16em}
+.burger{grid-column:3;grid-row:1;justify-self:end}
+.hdr{padding:6px 12px}
+@media (min-width:821px){.wm{font-size:23px}.hdr{padding:8px 3vw}}
