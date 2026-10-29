@@ -10,11 +10,11 @@ addEventListener('scroll',()=>{const y=scrollY,H=document.body.scrollHeight-inne
  if(!shown&&y/H>.7){shown=1;sheet.hidden=false}},{passive:true});
 if(!RM&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
  document.querySelectorAll('.intro>*,.band-h,.gal-h,.count,.join>*').forEach(el=>{el.classList.add('rv');io.observe(el)})}
-const sl=[...document.querySelectorAll('.sl')],Y=[[1944,'Flykten till Sverige'],[1944,'Ellen i Dalarö hamn'],[1989,'Baltiska kedjan']],yr=$('#yr'),yc=$('#yrcap');
+const sl=[...document.querySelectorAll('.sl')],Y=[[2020,'Minsk 2020 – unga mot diktaturen →','kunskap/#berattelser'],[1944,'Flykten till Sverige 1944 →','kunskap/#flykt'],[2019,'Hongkong 2019 – mot Pekings diktatur →','kunskap/#tiananmen'],[1944,'Ellen i Dalarö hamn 1944 →','kunskap/#flykt'],[2021,'Kuba 11 juli 2021 →','kunskap/#kuba'],[1989,'Baltiska kedjan 1989 →','kunskap/#balt'],[2026,'Sverige i dag – för ett fritt Sverige →','#om']],yr=$('#yr'),yc=$('#yrcap'),hl=$('#hlink');
 if(!RM&&sl.length>1){let i=0;const load=s=>{if(s.dataset.src){s.srcset=s.dataset.srcset;s.src=s.dataset.src;delete s.dataset.src}};
  setTimeout(()=>sl.slice(1).forEach(load),2500);
  const tick=(a,b)=>{const t0=performance.now(),f=t=>{const p=Math.min(1,(t-t0)/1400);yr.textContent=Math.round(a+(b-a)*p);if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)};
- setInterval(()=>{if(document.hidden||scrollY>innerHeight)return;const n=(i+1)%sl.length;load(sl[n]);sl[i].classList.remove('on');void sl[n].offsetWidth;sl[n].classList.add('on');tick(Y[i][0],Y[n][0]);yc.textContent=Y[n][1];i=n},6000)}
+ setInterval(()=>{if(document.hidden||scrollY>innerHeight)return;const n=(i+1)%sl.length;load(sl[n]);sl[i].classList.remove('on');void sl[n].offsetWidth;sl[n].classList.add('on');tick(Y[i][0],Y[n][0]);yc.textContent=Y[n][1];yc.href=Y[n][2];hl.href=Y[n][2];hl.setAttribute('aria-label','Läs mer om bilden: '+Y[n][1]);i=n},6000)}
 const tr=$('#track');if(tr){const it=[...tr.children],pos=$('#gpos');let cur=0;
  const go=d=>{const n=Math.max(0,Math.min(it.length-1,cur+d));it[n].scrollIntoView({behavior:RM?'auto':'smooth',inline:'center',block:'nearest'})};
  $('#prev').onclick=()=>go(-1);$('#next').onclick=()=>go(1);tr.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(1)}if(e.key==='ArrowLeft'){e.preventDefault();go(-1)}});
