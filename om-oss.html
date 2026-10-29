@@ -7,18 +7,19 @@
   <meta name="description" content="Ungdom mot kommunism (UMK) är en ungdomsorganisation som verkar mot kommunismens inflytande i samhället, i kampen för ett bättre Sverige.">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="legacy.css">
+  <link rel="stylesheet" href="header.css?v=16">
 </head>
 <body>
-<header class="ptop">
-  <div class="bar wrap">
-    <a class="wordmark" href="./" aria-label="UMK – Ungdom mot kommunism, till startsidan">
-      <span class="wordmark__letters">U<em>M</em>K</span>
-      <span class="wordmark__name">Ungdom mot<br>kommunism</span>
-    </a>
-    <a class="btn btn--yellow btn--small" href="./#ga-med">Bli medlem</a>
-  </div>
-  <div class="wrap"><h1 class="ptop__title">Om <span class="y">oss</span></h1></div>
+<header class="hdr s" id="hdr">
+  <button class="burger" id="burger" aria-label="Öppna meny" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <a class="wm" href="./" aria-label="Ungdom mot kommunism – startsida"><span class="w1">Ungdom mot</span><span class="w2">kommunism</span></a>
+  <a class="hdr-cta" href="https://umk.registra.nu/" target="_blank" rel="noopener">Bli medlem</a>
+  <nav class="menu" id="menu" aria-label="Huvudmeny"><a href="./#om" aria-current="page">Om oss</a><a href="./#historia">Galleri</a><a href="kunskap/">Kunskap</a><a href="kunskap/sverige/">Sverige</a><a href="./#ga-med">Gå med</a><a href="./#kontakt">Kontakt</a></nav>
 </header>
+<script>(()=>{const b=document.getElementById('burger'),m=document.getElementById('menu'),s=o=>{b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Stäng meny':'Öppna meny');m.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''};b.onclick=()=>s(b.getAttribute('aria-expanded')!=='true');m.querySelectorAll('a').forEach(a=>a.onclick=()=>s(false));addEventListener('keydown',e=>{if(e.key==='Escape')s(false)})})()</script>
+<div class="ptop">
+  <div class="wrap"><h1 class="ptop__title">Om <span class="y">oss</span></h1></div>
+</div>
 <main class="policy about">
  <div class="wrap"><div class="policy__body">
   <p class="policy__lede">Ungdom mot kommunism (UMK) är en ungdomsorganisation som verkar mot kommunismens inflytande i samhället, i kampen för ett bättre Sverige.</p>
