@@ -188,3 +188,8 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .hw .btn{min-width:230px}
 @media (min-width:821px){.hw h1{font-size:clamp(110px,10vw,180px)}.hw h1 span{display:inline}.hw h1 span:last-child{display:block}.hw-p{font-size:23px;max-width:none}}
 @media (prefers-reduced-motion:reduce){.hw-in{animation:none}}
+.wm{padding:2px}.wm-l{display:block;height:60px;width:auto}
+@media (min-width:821px){.wm-l{height:68px}}
+.hw-logo{margin:0 auto 18px;line-height:0}.hl{display:block;width:min(78vw,440px);height:auto;margin:0 auto}
+.hw-sub{font:800 13px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--m2);margin:0 0 22px}
+.hw .hw-p{margin-bottom:28px}
