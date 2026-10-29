@@ -193,3 +193,10 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .hw-logo{margin:0 auto 18px;line-height:0}.hl{display:block;width:min(78vw,440px);height:auto;margin:0 auto}
 .hw-sub{font:800 13px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--m2);margin:0 0 22px}
 .hw .hw-p{margin-bottom:28px}
+.wm{flex-direction:row;font:400 22px/1 var(--cond);font-stretch:62.5%;text-transform:uppercase;letter-spacing:.04em;min-height:44px;align-items:center;white-space:nowrap;padding:0 6px}
+@media (min-width:821px){.wm{font-size:28px}}
+.hl-s{display:block;width:min(80vw,420px);height:auto;margin:0 auto}.hl-1{display:none}
+@media (min-width:821px){.hl-s{display:none}.hl-1{display:block;font:400 clamp(90px,8.6vw,150px)/.95 var(--cond);font-stretch:62.5%;text-transform:uppercase;color:var(--m2);white-space:nowrap;padding-top:.1em}}
+.hw h1.hw-logo{font:400 13.6vw/.92 var(--cond);font-stretch:62.5%;text-transform:uppercase;color:var(--m2);margin:0 auto 22px;white-space:nowrap}
+.hw h1.hw-logo span{display:block;padding-top:.06em}.hw h1.hw-logo .l2{font-size:1.12em}
+@media (min-width:821px){.hw h1.hw-logo{font-size:clamp(72px,6.3vw,124px)}.hw h1.hw-logo span{display:inline}.hw h1.hw-logo .l2{font-size:1em}}
