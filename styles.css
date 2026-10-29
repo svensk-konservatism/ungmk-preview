@@ -200,3 +200,5 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .hw h1.hw-logo{font:400 13.6vw/.92 var(--cond);font-stretch:62.5%;text-transform:uppercase;color:var(--m2);margin:0 auto 22px;white-space:nowrap}
 .hw h1.hw-logo span{display:block;padding-top:.06em}.hw h1.hw-logo .l2{font-size:1.12em}
 @media (min-width:821px){.hw h1.hw-logo{font-size:clamp(72px,6.3vw,124px)}.hw h1.hw-logo span{display:inline}.hw h1.hw-logo .l2{font-size:1em}}
+.hw-2{margin:18px 0 0}.hw-2 a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px;color:var(--m2);font:400 18px var(--bask);text-underline-offset:4px}
+.intro-p{font:400 19px/1.5 var(--bask);margin:0 0 22px;color:var(--m)}

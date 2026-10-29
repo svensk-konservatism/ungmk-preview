@@ -1,0 +1,14 @@
+*.bak
+*.bak.*
+*.db
+*.orig*
+*.pre-*
+*.sqlite
+*.tmp
+*.zip
+.DS_Store
+.dev.vars
+.env
+.env.*
+.wrangler/
+node_modules/
