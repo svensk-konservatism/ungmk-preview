@@ -180,3 +180,11 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 @media (min-width:821px){.hx h1{font-size:clamp(96px,9.6vw,170px)}.hx h1 .m.m{display:inline-block;margin-right:.2em;vertical-align:top}.hx h1 .m.m:last-child{display:block;margin-right:0}}
 .hx-in{max-width:100%}@media (min-width:821px){.hx-in{max-width:1100px}}
 .hx h1 .m:nth-child(2){padding-right:.1em;padding-left:.04em}
+.hero.hw{background:#fff;color:var(--m2);height:auto;min-height:calc(100svh - 72px);display:grid;place-items:center;text-align:center;isolation:auto}
+.hw-in{padding:56px 22px 72px;max-width:1100px;width:100%;animation:fd 1s ease-out both}
+.hw h1{font:400 clamp(60px,21vw,190px)/.84 var(--cond);font-stretch:62.5%;text-transform:uppercase;color:var(--m2);letter-spacing:0;margin:0 0 28px}
+.hw h1 span{display:block;padding-top:.08em}
+.hw-p{font:400 19px/1.45 var(--bask);color:var(--m);margin:0 auto 30px;max-width:28ch}
+.hw .btn{min-width:230px}
+@media (min-width:821px){.hw h1{font-size:clamp(110px,10vw,180px)}.hw h1 span{display:inline}.hw h1 span:last-child{display:block}.hw-p{font-size:23px;max-width:none}}
+@media (prefers-reduced-motion:reduce){.hw-in{animation:none}}
