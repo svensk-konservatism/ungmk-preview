@@ -209,3 +209,17 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .burger{grid-column:3;grid-row:1;justify-self:end}
 .hdr{padding:6px 12px}
 @media (min-width:821px){.wm{font-size:23px}.hdr{padding:8px 3vw}}
+/* v17: integritetssidan i ny design */
+.pol-h{padding:56px var(--pad) 8px;text-align:center}
+.pol-kick{font:800 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--m2);margin:0 0 14px}
+.pol-h h1{font:400 clamp(34px,10vw,104px)/.95 var(--cond);font-stretch:62.5%;text-transform:uppercase;color:var(--m2)}
+.pol{padding:28px var(--pad) 40px}
+.pol-in{max-width:42rem;margin:0 auto;overflow-wrap:anywhere}
+.pol-lede{font-size:21px;line-height:1.5;text-align:center;margin:0 0 8px}
+.pol h2{font:400 23px/1.1 var(--cond);font-stretch:75%;text-transform:uppercase;color:var(--m2);margin:2.4rem 0 .7rem}
+.pol h2 .n{margin-right:.35em}
+.pol p,.pol ul{margin:0 0 1rem}.pol ul{padding-left:1.3rem}.pol li{margin:0 0 .35rem}
+.pol .todo{font-size:15px;color:#8a6a6a}
+.pol .updated{font:15px var(--sans);color:#8a6a6a;margin-top:2.4rem}
+.pol .back{display:inline-flex;align-items:center;min-height:44px;margin-top:8px}
+@media (min-width:600px){.pol h2{font-size:30px}}@media (min-width:821px){.pol-h{padding-top:80px}.pol h2{font-size:36px}}
