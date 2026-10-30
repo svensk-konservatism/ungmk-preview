@@ -27,3 +27,4 @@
 @media (min-width:821px){.wm{font-size:23px}.hdr{padding:8px 3vw}}
 .hdr a{color:var(--m2)}.hdr{font-family:var(--bask)}
 .ptop{padding-top:8px}
+.menu a.lang{display:inline-flex;align-items:center;gap:10px}.menu .flag{display:block;flex:none;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.12)}@media (max-width:820px){.menu a.lang{font-size:22px;margin-top:10px}}

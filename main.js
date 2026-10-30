@@ -1,5 +1,5 @@
 (()=>{const $=s=>document.querySelector(s),RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const bg=$('#burger'),menu=$('#menu'),setM=o=>{bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Stäng meny':'Öppna meny');menu.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''};
+const bg=$('#burger'),menu=$('#menu'),setM=o=>{bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?(document.documentElement.lang=='en'?'Close menu':'Stäng meny'):(document.documentElement.lang=='en'?'Open menu':'Öppna meny'));menu.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''};
 bg.onclick=()=>setM(bg.getAttribute('aria-expanded')!=='true');menu.querySelectorAll('a').forEach(a=>a.onclick=()=>setM(false));
 addEventListener('keydown',e=>{if(e.key==='Escape'){setM(false);closeS()}});
 const hdr=$('#hdr'),st=$('#sticky'),sheet=$('#sheet');let shown=sessionStorage.getItem('umks');

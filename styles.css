@@ -222,3 +222,4 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .pol .updated{font:15px var(--sans);color:#8a6a6a;margin-top:2.4rem}
 .pol .back{display:inline-flex;align-items:center;min-height:44px;margin-top:8px}
 @media (min-width:600px){.pol h2{font-size:30px}}@media (min-width:821px){.pol-h{padding-top:80px}.pol h2{font-size:36px}}
+.menu a.lang{display:inline-flex;align-items:center;gap:10px}.menu .flag{display:block;flex:none;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.12)}@media (max-width:820px){.menu a.lang{font-size:22px;margin-top:10px}}
