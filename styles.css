@@ -219,7 +219,6 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .pol h2{font:400 23px/1.1 var(--cond);font-stretch:75%;text-transform:uppercase;color:var(--m2);margin:2.4rem 0 .7rem}
 .pol h2 .n{margin-right:.35em}
 .pol p,.pol ul{margin:0 0 1rem}.pol ul{padding-left:1.3rem}.pol li{margin:0 0 .35rem}
-.pol .todo{font-size:15px;color:#8a6a6a}
 .pol .updated{font:15px var(--sans);color:#8a6a6a;margin-top:2.4rem}
 .pol .back{display:inline-flex;align-items:center;min-height:44px;margin-top:8px}
 @media (min-width:600px){.pol h2{font-size:30px}}@media (min-width:821px){.pol-h{padding-top:80px}.pol h2{font-size:36px}}
