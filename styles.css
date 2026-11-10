@@ -28,13 +28,6 @@ h1,h2,h3{font-weight:400;margin:0}
 .more summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 6px;border-bottom:1px solid var(--m);font:17px var(--bask)}
 .more summary::-webkit-details-marker{display:none}.more summary::after{content:"+";font-size:20px}.more[open] summary::after{content:"–"}
 .more p{text-align:left;color:#3a1a1a;margin:18px 0 0}
-/* band */
-.band{background:var(--m);color:#fff;padding:60px 0 52px}
-.band-h{font:400 34px/1.05 var(--cond);font-stretch:68%;text-align:center;padding:0 var(--pad);margin-bottom:30px}
-.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--pad);scrollbar-width:none}.strip::-webkit-scrollbar{display:none}
-.strip figure{margin:0;flex:0 0 78%;scroll-snap-align:center}
-.strip img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;filter:sepia(.25)}
-.strip figcaption{font:italic 16px var(--bask);margin-top:10px}
 /* history */
 .hist{padding:80px 0;text-align:center}
 .hist h2{font:400 36px/1.05 var(--cond);font-stretch:68%;color:var(--m2);padding:0 var(--pad);margin-bottom:30px}
@@ -69,8 +62,6 @@ h1,h2,h3{font-weight:400;margin:0}
  .wm{font-size:26px}.hdr-cta{display:block;justify-self:end;grid-column:3;grid-row:1;font-size:16px;text-decoration:none;padding:12px}
  .menu{position:static;grid-column:1/-1;flex-direction:row;opacity:1;visibility:visible;gap:10px;margin-top:6px}.menu a{font-size:19px;min-height:44px}.menu a:hover{opacity:.55}
  .intro{padding:120px 5vw}.caps{font-size:34px}.it{font-size:24px}
- .band{padding:90px 0}.band-h{font-size:52px;margin-bottom:50px}
- .strip{overflow:visible;padding:0 5vw}.strip figure{flex:1}.strip img{transition:transform .8s}.strip figure:hover img{transform:scale(1.03)}
  .hist{padding:120px 0}.hist h2{font-size:56px;margin-bottom:50px}
  .tl{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;overflow:visible;padding:0 5vw}.tl li{padding:32px 28px}
  .join{padding:120px 5vw}.join h2{font-size:60px}.list{font-size:24px;max-width:620px}
@@ -238,3 +229,7 @@ section,footer{scroll-margin-top:96px}.blk{white-space:nowrap;padding:0 22px}@me
 .rc-view{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:4px}
 @media (min-width:821px){.rcard{grid-template-columns:280px 1fr;align-items:start;gap:48px;padding-top:8px}}
 .rc-sub{font:italic 20px/1.35 var(--bask);margin:0 0 1rem!important;color:var(--m2)}
+
+/* v20: rapport på förstasidan */
+.rp-home{background:var(--cream);padding:56px var(--pad) 64px}
+@media (min-width:821px){.rp-home{padding:80px 5vw}}

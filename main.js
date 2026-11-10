@@ -9,7 +9,7 @@ addEventListener('scroll',()=>{const y=scrollY,H=document.body.scrollHeight-inne
  const jr=join.getBoundingClientRect();st.classList.toggle('on',y>innerHeight*.6&&!(jr.top<innerHeight&&jr.bottom>0)&&sheet.hidden);
  if(!shown&&y/H>.7){shown=1;sheet.hidden=false}},{passive:true});
 if(!RM&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
- document.querySelectorAll('.intro>*,.band-h,.gal-h,.count,.join>*').forEach(el=>{el.classList.add('rv');io.observe(el)})}
+ document.querySelectorAll('.intro>*,.rp-home,.gal-h,.count,.join>*').forEach(el=>{el.classList.add('rv');io.observe(el)})}
 const tr=$('#track');if(tr){const it=[...tr.children],pos=$('#gpos');let cur=0;
  const go=d=>{const n=Math.max(0,Math.min(it.length-1,cur+d));it[n].scrollIntoView({behavior:RM?'auto':'smooth',inline:'center',block:'nearest'})};
  $('#prev').onclick=()=>go(-1);$('#next').onclick=()=>go(1);tr.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(1)}if(e.key==='ArrowLeft'){e.preventDefault();go(-1)}});
